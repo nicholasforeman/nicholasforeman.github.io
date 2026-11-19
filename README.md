@@ -1,29 +1,26 @@
-# 👋 About Me
+# nicholasforeman.com
 
-I am **Nicholas**, AKA **Azutreo**, and I am a Game Developer creating games on [Roblox](https://www.roblox.com/users/9221415/profile).
+Personal portfolio: about me, skills, and experience timeline. A static SvelteKit site (Svelte 5, Tailwind CSS v4, adapter-static), fully prerendered to `build/`.
 
-Currently working on [Anime Rivals](https://www.roblox.com/games/91946222530575/Battleground-Rivals) - an ambitious battleground game with focus on duels.
+## Editing content
 
-Previously **Programmer III @ Gamefam** and **Senior Gameplay Engineer @ Supersocial**.
+All content lives in `src/lib/data/`:
 
-## 🧰 Tech
+- `profile.ts`: name, about-me paragraphs, and social links.
+- `skills.ts`: skill groups, mirroring the GitHub profile README.
+- `experience.ts`: the timeline, newest first. Each entry is an organization with a role, optional period, and a list of items; each item's `kind` is `developed`, `tested`, or `other`.
 
-My programming specialty is **Lua/Luau**, however I have worked across a broad stack and love digging into several disciplines, including game engine internals - advanced concepts, algorithms, frameworks, and client/server replication.
+## Scripts
 
-Outside of code, I am also experienced in project management, community management, quality assurance, and general IT/cybersecurity.
+```sh
+bun install
+bun run dev        # local dev server
+bun run check      # svelte-check type check
+bun run lint       # oxlint
+bun run fmt        # oxfmt (fmt:check to verify)
+bun run build      # static site in build/
+```
 
-**Languages:** Lua/Luau • C • C++ • C# • Rust • Go • Python • Java • TypeScript • JavaScript
+## Deploying
 
-**Frontend:** Svelte • Vue • React • Tailwind • HTML/CSS
-
-## 🌱 Areas of Interest
-
-Business • Law • Finance • Project Management • Community Management • Quality Assurance • IT
-
-## 🎮 Off the Clock
-
-When I am not making games on Roblox, I also love playing games. My current favorites consist of **Le Mans Ultimate**, **Balatro**, and **Counter-Strike 2**. I also used to play **Rainbow Six Siege** and **Valorant** competitively when I was in in university.
-
-# 📫 My Socials
-
-[LinkedIn](https://linkedin.com/in/nicholas-foreman) • [GitHub](https://github.com/nicholasforeman) • [Twitter/X](https://x.com/azutreo) • [Instagram](https://instagram.com/azutreo/)
+Every push to `main` builds the site and deploys `build/` to GitHub Pages through `.github/workflows/deploy.yml`. The custom domain (nicholasforeman.com) is set in the repository's Pages settings, so no `CNAME` file is needed.
