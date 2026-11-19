@@ -173,7 +173,8 @@ export const experience: Experience[] = [
 				name: "Phillip the Pig",
 				kind: "developed",
 				role: "Gameplay & Systems Engineer",
-				description: "A D&D game brought to life for the PAX 2020 Panel of Legends in Manticore's Core platform.",
+				description:
+					"A D&D game brought to life for the PAX 2020 Panel of Legends in Manticore's Core platform.",
 			},
 		],
 	},
