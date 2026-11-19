@@ -1,12 +1,14 @@
 @import "tailwindcss";
+@import "@fontsource-variable/bricolage-grotesque";
 
 @theme {
-	--color-background: #0b0d10;
-	--color-surface: #14171c;
-	--color-border: #262b33;
-	--color-foreground: #e6e8eb;
-	--color-muted: #9aa3ad;
-	--color-accent: #5eb3ff;
+	--color-background: #12121d;
+	--color-surface: #232238;
+	--color-border: #41405b;
+	--color-foreground: #efedf9;
+	--color-muted: #bab6d0;
+	--color-accent: #c2adff;
+	--font-display: "Bricolage Grotesque Variable", var(--font-sans);
 }
 
 html {
@@ -17,6 +19,12 @@ body {
 	@apply bg-background text-foreground antialiased;
 }
 
-a:focus-visible {
-	@apply rounded-sm outline-2 outline-offset-2 outline-accent;
+::selection {
+	@apply bg-accent text-background;
+}
+
+@layer base {
+	a:focus-visible {
+		@apply outline-2 outline-offset-2 outline-accent;
+	}
 }

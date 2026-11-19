@@ -17,9 +17,9 @@
 	<meta property="og:description" content={description} />
 </svelte:head>
 
-<main class="mx-auto flex max-w-3xl flex-col gap-16 px-4 py-16 sm:px-6 sm:py-24">
-	<Hero {profile} />
+<Hero {profile} />
 
+<main class="mx-auto flex max-w-7xl flex-col gap-11 px-4 pt-12 pb-16 sm:gap-14 sm:px-8 sm:pt-16 sm:pb-24">
 	<Section id="skills" title="Skills">
 		<Skills groups={skillGroups} />
 	</Section>
