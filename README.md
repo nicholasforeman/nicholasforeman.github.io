@@ -20,3 +20,7 @@ bun run lint       # oxlint
 bun run fmt        # oxfmt (fmt:check to verify)
 bun run build      # static site in build/
 ```
+
+## Deploying
+
+Every push to `main` builds the site and deploys `build/` to GitHub Pages through `.github/workflows/deploy.yml`. The custom domain (nicholasforeman.com) is set in the repository's Pages settings, so no `CNAME` file is needed.
