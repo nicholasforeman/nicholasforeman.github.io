@@ -24,7 +24,7 @@ export const experience: Experience[] = [
 	{
 		organization: "Azutreo",
 		role: "Founder",
-		period: "Oct 2025 - Present",
+		period: "2017 - Present",
 		highlights: [
 			"Independently designing, building, publishing, and maintaining several Roblox games",
 			"Building automated workflows around AI coding agents, including cross-provider code review and agent access rules",
